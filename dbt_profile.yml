@@ -1,0 +1,8 @@
+models:
+  retail_project:
+    staging:
+      materialized: view
+      snowflake_warehouse: retail_wh
+    marts:
+      materialized: table
+      snowflake_warehouse: retail_wh

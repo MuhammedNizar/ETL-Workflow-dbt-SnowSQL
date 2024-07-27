@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: retail
+    database: retail_db
+    schema: retail_schema
+    tables:
+      - name: orders
+        columns:
+          - name: order_id
+            tests:
+              - unique
+              - not_null
+      - name: customers
+        columns:
+          - name: customer_id
+            tests:
+              - unique
+              - not_null

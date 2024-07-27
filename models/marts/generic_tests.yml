@@ -1,0 +1,11 @@
+models:
+  - name: fct_orders
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+      - name: order_status
+        tests:
+          - accepted_values:
+              values: ['Pending', 'Completed', 'Cancelled']
